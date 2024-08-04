@@ -1,16 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
 h1 {
     text-align: center;
     background-color: rgb(18, 61, 126);
     padding: 10px;
     font: bold;
     color: white;
+    width: 100%;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
 
 .IMG {
     display: flex;
@@ -18,13 +20,13 @@ h1 {
     align-items: center;
     gap: 3rem;
     margin-top: 6rem;
+    
 }
 
 img {
     height: 165px;
     width: 165px;
     border-radius: 50%;
-
     object-fit: cover;
 }
 
@@ -74,3 +76,26 @@ img:hover {
     padding: 1rem;
      border-radius: 20px;
 }
+
+@media only screen and (max-width: 340px) {
+
+h1{
+    padding: 10px;
+}
+    .IMG{
+        display: flex;
+        flex-direction: column;
+        margin-top: 12px;
+    }
+
+    img{
+        height: 80px;
+        width: 80px;
+    }
+    
+.msg-box{
+    
+    margin-top: 2rem;
+}
+
+  }
