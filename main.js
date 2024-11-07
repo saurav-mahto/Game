@@ -22,11 +22,14 @@ const ShowWin = (userWin ,userChoice,CompChoice) => {
         userid.innerText = userscore
         msg.innerText = `you win, your ${userChoice} beats ${CompChoice}`
         msg.style.backgroundColor ="green"
+        msg.style.padding =0;
     } else {
         compscore++
         compid.innerText =compscore
         msg.innerText = ` you lose ${CompChoice} beats your ${userChoice}`
-   msg.style.backgroundColor ="red"
+        msg.style.backgroundColor ="red"
+        msg.style.padding =0;
+
     }
 }
 
